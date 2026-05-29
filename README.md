@@ -14,7 +14,7 @@ graph TD
     A -->|3. Upload Prescription Image / Text| B
     B -->|2. Query & Persist EHR / Vitals| C[(Supabase Database)]
     B -->|4. Run Orchestration Pipeline| D[Multi-Agent System]
-    D -->|5. Multi-Step Analysis| E[Google Gemini 2.0 Flash]
+    D -->|5. Multi-Step Analysis| E[Google Gemini 3.5 Flash-lite]
     E -->|6. Safe Alternatives & Risk Score| B
     B -->|7. Display Warnings & Alternatives| A
 ```
